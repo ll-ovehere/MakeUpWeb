@@ -1,0 +1,234 @@
+/* =======================
+   🌸 Global Style
+======================= */
+body {
+  background: linear-gradient(135deg, #fde2ea, #f7c1d9, #e7a1c4);
+  color: #8a4f6a;
+  font-family: "Tahoma", sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* =======================
+   🌸 Header
+======================= */
+header {
+  background: linear-gradient(90deg, #c06c84, #ab6d8f, #d48fb0);
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+header nav {
+  margin-top: 10px;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+header nav a:hover {
+  color: #fbe4ef;
+}
+
+/* =======================
+   🌸 Main Containers
+======================= */
+main.form-container,
+main.home-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+}
+
+main.home-container img {
+  max-width: 50%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* =======================
+   🌸 Forms
+======================= */
+.auth-form {
+  background-color: #fff8f0;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(196, 134, 155, 0.3);
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-form label {
+  margin-top: 10px;
+}
+
+.auth-form input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.auth-form button {
+  margin-top: 15px;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  color: white;
+  background: linear-gradient(135deg, #c06c84, #ab6d8f);
+}
+
+.auth-form button:hover {
+  background: linear-gradient(135deg, #ab6d8f, #8a4f6a);
+}
+
+/* =======================
+   🌸 Products
+======================= */
+.products-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.product {
+  background: #fff;
+  border-radius: 12px;
+  padding: 15px;
+  width: 180px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.product:hover {
+  transform: scale(1.05);
+}
+
+.product img {
+  border-radius: 8px;
+}
+
+.product button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  color: white;
+  background: linear-gradient(135deg, #c06c84, #ab6d8f);
+}
+
+/* =======================
+   🌸 Sections
+======================= */
+.about-section,
+.contact-section,
+.cart-section {
+  padding: 40px;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cart-table th {
+  background: #ab6d8f;
+  color: white;
+}
+
+.cart-table th,
+.cart-table td {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+/* =======================
+   🌸 Buttons
+======================= */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(135deg, #c06c84, #ab6d8f);
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, #ab6d8f, #8a4f6a);
+}
+
+/* =======================
+   🌸 Dashboard
+======================= */
+.dashboard-container {
+  padding: 40px;
+  text-align: center;
+}
+
+.dash-buttons {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.dash-btn {
+  background: #fff8f0;
+  padding: 20px 30px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #8a4f6a;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.dash-btn:hover {
+  transform: scale(1.1);
+  background: #fde2ea;
+}
+
+/* =======================
+   🌸 Footer
+======================= */
+footer {
+  background: linear-gradient(90deg, #d48fb0, #ab6d8f, #c06c84);
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: auto;
+}
+
+/* =======================
+   🌸 Responsive
+======================= */
+@media (max-width: 600px) {
+  header nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  header nav a {
+    margin: 5px 0;
+  }
+}

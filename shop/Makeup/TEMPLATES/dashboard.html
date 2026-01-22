@@ -1,0 +1,19 @@
+{%  extends 'main.html'  %}
+
+{% block content %}
+
+ <main class="dashboard-container">
+    <h2>Manage Products</h2>
+    <p>Select an action:</p>
+
+    <div class="dash-buttons">
+        <a class="dash-btn" href="{%url 'add_product'%}">➕ Add Product</a>
+        {% comment %} <a class="dash-btn" href="{%url 'edit_product'%}">✏️ Edit Product</a> {% endcomment %}
+        {% comment %} <a class="dash-btn" href="{%url 'delete_product'%}">🗑️ Delete Product</a> {% endcomment %}
+        <a class="dash-btn" href="{%url 'list'%}"> ➕ list</a>
+    </div>
+</main>
+
+
+
+{% endblock %}

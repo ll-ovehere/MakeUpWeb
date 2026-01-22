@@ -1,0 +1,258 @@
+{% extends 'main.html' %}
+{% load static %}
+
+{% block content %}
+<main>
+    <h2 style="text-align:center; margin:20px 0;">Our Makeups 💄 </h2>
+    <div class="products-grid">
+
+        <!-- 1 -->
+        <div class="product">
+            <img src="{% static 'image/Nars concealer.jpg' %}" alt="Nars concealer" width="150">
+            <p>Nars concealer <br>$55</p>
+            <form method="POST" action="{% url 'cart' %}">
+    {% csrf_token %}
+    <input type="hidden" name="product_id" value="{{ product.id }}">
+    
+    <button type="submit" class="btn-add">Add to Cart</button>
+</form>
+        </div>
+
+        <!-- 2 -->
+        <div class="product">
+            <img src="{% static 'image/Dior eyeliner.jpg' %}" alt="Dior eyeliner" width="150">
+            <p>Dior eyeliner <br>$35</p>
+            <form method="POST" action="{% url 'cart' %}">
+    {% csrf_token %}
+    <input type="hidden" name="product_id" value="{{ product.id }}">
+    
+    <button type="submit" class="btn-add">Add to Cart</button>
+</form>
+        </div>
+
+        <!-- 3 -->
+        <div class="product">
+            <img src="{% static 'image/Kiko brown mascara.jpg' %}" alt="Kiko brown mascara" width="150">
+            <p>Kiko brown mascara <br>$40</p>
+            <form method="POST" action="{% url 'cart' %}">
+    {% csrf_token %}
+    <input type="hidden" name="product_id" value="{{ product.id }}">
+    
+    <button type="submit" class="btn-add">Add to Cart</button>
+</form>
+        </div>
+
+        <!-- 4 -->
+        <div class="product">
+            <img src="{% static 'image/kiko lip gloss.jpg' %}" alt="kiko lip gloss" width="150">
+            <p>kiko lip gloss <br>$15</p>
+           <form method="POST" action="{% url 'cart' %}">
+    {% csrf_token %}
+    <input type="hidden" name="product_id" value="{{ product.id }}">
+    
+    <button type="submit" class="btn-add">Add to Cart</button>
+</form>
+        </div>
+
+        <!-- 5 -->
+        <div class="product">
+            <img src="{% static 'image/Brown contour.jpg' %}" alt="Brown contour" width="150">
+            <p>Brown contour <br>$24</p>
+            <form method="POST" action="{% url 'cart' %}">
+    {% csrf_token %}
+    <input type="hidden" name="product_id" value="{{ product.id }}">
+    
+    <button type="submit" class="btn-add">Add to Cart</button>
+</form>
+        </div>
+
+        <!-- 6 -->
+        <div class="product">
+            <img src="{% static 'image/Dior mascara.jpg' %}" alt="Dior mascara" width="150">
+            <p>Dior mascara <br>$60</p>
+           <form method="POST" action="{% url 'cart' %}">
+    {% csrf_token %}
+    <input type="hidden" name="product_id" value="{{ product.id }}">
+    
+    <button type="submit" class="btn-add">Add to Cart</button>
+</form>
+        </div>
+
+        <!-- 7 -->
+        <div class="product">
+            <img src="{% static 'image/Fondation Nars.jpg' %}" alt="Fondation Nars" width="150">
+            <p>Fondation Nars <br>$65</p>
+            <form method="POST" action="{% url 'cart' %}">
+    {% csrf_token %}
+    <input type="hidden" name="product_id" value="{{ product.id }}">
+    
+    <button type="submit" class="btn-add">Add to Cart</button>
+</form>
+        </div>
+
+        <!-- 8 -->
+        <div class="product">
+            <img src="{% static 'image/Nars blusher.jpg' %}" alt="Nars blusher" width="150">
+            <p>Nars blusher <br>$32</p>
+            <form method="POST" action="{% url 'cart' %}">
+    {% csrf_token %}
+    <input type="hidden" name="product_id" value="{{ product.id }}">
+    
+    <button type="submit" class="btn-add">Add to Cart</button>
+</form>
+        </div>
+
+        <!-- 9 -->
+        <div class="product">
+            <img src="{% static 'image/Dior pallete.jpg' %}" alt="Dior pallete" width="150">
+            <p>Dior pallete <br>$54</p>
+           <form method="POST" action="{% url 'cart' %}">
+    {% csrf_token %}
+    <input type="hidden" name="product_id" value="{{ product.id }}">
+    
+    <button type="submit" class="btn-add">Add to Cart</button>
+</form>
+        </div>
+
+        <!-- 10 -->
+        <div class="product">
+            <img src="{% static 'image/Eyebrow gel.jpg' %}" alt="Eyebrow gel" width="150">
+            <p>Eyebrow gel <br>$25</p>
+            <form method="POST" action="{% url 'cart' %}">
+    {% csrf_token %}
+    <input type="hidden" name="product_id" value="{{ product.id }}">
+    
+    <button type="submit" class="btn-add">Add to Cart</button>
+</form>
+        </div>
+
+        <!-- 11 -->
+        <div class="product">
+            <img src="{% static 'image/Lip Liner.jpg' %}" alt="Lip Liner" width="150">
+            <p>Lip Liner <br>$20</p>
+           <form method="POST" action="{% url 'cart' %}">
+    {% csrf_token %}
+    <input type="hidden" name="product_id" value="{{ product.id }}">
+    
+    <button type="submit" class="btn-add">Add to Cart</button>
+</form>
+        </div>
+
+        <!-- 12 -->
+        <div class="product">
+            <img src="{% static 'image/Dior Lipstick.jpg' %}" alt="Dior Lipstick" width="150">
+            <p>Dior Lipstick <br>$34</p>
+            <form method="POST" action="{% url 'cart' %}">
+    {% csrf_token %}
+    <input type="hidden" name="product_id" value="{{ product.id }}">
+    
+    <button type="submit" class="btn-add">Add to Cart</button>
+</form>
+        </div>
+
+        <!-- 13 -->
+        <div class="product">
+            <img src="{% static 'image/Dior blusher.jpg' %}" alt="Dior blusher" width="150">
+            <p>Dior blusher <br>$54</p>
+            <form method="POST" action="{% url 'cart' %}">
+    {% csrf_token %}
+    <input type="hidden" name="product_id" value="{{ product.id }}">
+    
+    <button type="submit" class="btn-add">Add to Cart</button>
+</form>
+        </div>
+
+        <!-- 14 -->
+        <div class="product">
+            <img src="{% static 'image/Lipstick.jpg' %}" alt="Lipstick" width="150">
+            <p>Lipstick <br>$54</p>
+           <form method="POST" action="{% url 'cart' %}">
+    {% csrf_token %}
+    <input type="hidden" name="product_id" value="{{ product.id }}">
+    
+    <button type="submit" class="btn-add">Add to Cart</button>
+</form>
+        </div>
+
+        <!-- 15 -->
+        <div class="product">
+            <img src="{% static 'image/kiko mascara.jpg' %}" alt="kiko mascara" width="150">
+            <p>kiko mascara <br>$24</p>
+            <form method="POST" action="{% url 'cart' %}">
+    {% csrf_token %}
+    <input type="hidden" name="product_id" value="{{ product.id }}">
+    
+    <button type="submit" class="btn-add">Add to Cart</button>
+</form>
+        </div>
+
+        <!-- 16 -->
+        <div class="product">
+            <img src="{% static 'image/Loose powder.jpg' %}" alt="Loose powder" width="150">
+            <p>Loose powder <br>$24</p>
+           <form method="POST" action="{% url 'cart' %}">
+    {% csrf_token %}
+    <input type="hidden" name="product_id" value="{{ product.id }}">
+    
+    <button type="submit" class="btn-add">Add to Cart</button>
+</form>
+        </div>
+
+        <!-- 17 -->
+        <div class="product">
+            <img src="{% static 'image/Highlighter palette.jpg' %}" alt="Highlighter palette" width="150">
+            <p>Highlighter palette <br>$34</p>
+            <form method="POST" action="{% url 'cart' %}">
+    {% csrf_token %}
+    <input type="hidden" name="product_id" value="{{ product.id }}">
+    
+    <button type="submit" class="btn-add">Add to Cart</button>
+</form>
+        </div>
+
+        <!-- 18 -->
+        <div class="product">
+            <img src="{% static 'image/Highlighter.jpg' %}" alt="Highlighter" width="150">
+            <p>Highlighter <br>$30</p>
+           <form method="POST" action="{% url 'cart' %}">
+    {% csrf_token %}
+    <input type="hidden" name="product_id" value="{{ product.id }}">
+    
+    <button type="submit" class="btn-add">Add to Cart</button>
+</form>
+        </div>
+
+        <!-- 19 -->
+        <div class="product">
+            <img src="{% static 'image/Dior Lipstick gloss.jpg' %}" alt="Dior Lipstick gloss" width="150">
+            <p>Dior Lipstick gloss <br>$39</p>
+            <form method="POST" action="{% url 'cart' %}">
+    {% csrf_token %}
+    <input type="hidden" name="product_id" value="{{ product.id }}">
+    
+    <button type="submit" class="btn-add">Add to Cart</button>
+</form>
+        </div>
+
+    </div>
+</main>
+<script>
+function addToCart(name, price) {
+    fetch("{% url 'cart' %}", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+            "X-CSRFToken": "{{ csrf_token }}"
+        },
+        body: JSON.stringify({
+            name: name,
+            price: price
+        })
+    })
+    .then(() => {
+        alert("✅ Added to cart");
+    });
+}
+</script>
+
+{% endblock %}

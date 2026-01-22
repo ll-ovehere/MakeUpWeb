@@ -1,0 +1,33 @@
+{% extends 'main.html' %}
+{% block content %}
+<main class="cart-section">
+    <h2>Products List</h2>
+    <div style="text-align:center; margin-bottom:20px;">
+        <a href="{%url 'add_product' %}" class="btn">Add Product</a>
+    </div>
+    <table class="cart-table">
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Price</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for product in products %}
+            <tr>
+                <td>{{ product.name }}</td>
+                <td>${{ product.price }}</td>
+                <td>
+                    <a href="{%url 'edit_product' product.id %}" class="btn">Edit</a>
+                    <a href="{%url 'delete_product' product.id %}" class="btn delete-btn">Delete</a>
+                </td>
+            </tr>
+            {% empty %}
+            <tr><td colspan="3" style="text-align:center;">No products available.</td></tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</main>
+{% endblock %}
+
